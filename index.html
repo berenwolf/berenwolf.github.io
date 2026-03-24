@@ -1,22 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Beren Kurt</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beren Kurt | Portfolio</title>
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:Arial, Helvetica, sans-serif;background:linear-gradient(135deg,#0f172a,#111827,#1e293b);color:white;min-height:100vh;}
+    .container{width:90%;max-width:1100px;margin:auto;padding:40px 0;}
+    .hero{text-align:center;padding:80px 20px 50px;}
+    .hero h1{font-size:3rem;}
+    .hero h2{color:#93c5fd;margin:10px 0;}
+    .hero p{max-width:700px;margin:auto;color:#d1d5db;}
+    .buttons{margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;}
+    .btn{padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:bold;transition:.3s;}
+    .btn:hover{transform:translateY(-3px);}
+    .btn-primary{background:#3b82f6;color:white;}
+    .btn-secondary{background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);}
+    section{margin-top:50px;}
+    .section-title{text-align:center;font-size:1.8rem;margin-bottom:20px;}
+    .card{background:rgba(255,255,255,0.06);padding:24px;border-radius:20px;border:1px solid rgba(255,255,255,0.1);transition:.3s;}
+    .card:hover{transform:translateY(-5px);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .tags{margin-top:10px;}
+    .tag{background:rgba(59,130,246,0.2);padding:5px 10px;border-radius:999px;margin:3px;display:inline-block;}
+    .contact-links{display:flex;justify-content:center;gap:10px;margin-top:15px;flex-wrap:wrap;}
+    .contact-links a{background:rgba(255,255,255,0.1);padding:10px 14px;border-radius:10px;text-decoration:none;color:white;}
+    footer{text-align:center;margin-top:40px;color:#9ca3af;}
+  </style>
 </head>
-<body style="background-color:black; color:white; text-align:center; font-family:sans-serif;">
+<body>
+  <div class="container">
 
-  <h1>Hi, I'm Beren 👋</h1>
-  <h2>Electrical & Electronics Engineering Student ⚡</h2>
+    <section class="hero">
+      <h1>Hi, I'm Beren 👋</h1>
+      <h2>Electrical & Electronics Engineering Student ⚡</h2>
+      <p>I am passionate about embedded systems, circuit design, and signal processing.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="mailto:berenkurt@gmail.com">Contact Me</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/beren-kurt" target="_blank">LinkedIn</a>
+        <a class="btn btn-secondary" href="https://berenwolf.github.io/beren-kurt-cv.pdf" target="_blank">Download CV</a>
+      </div>
+    </section>
 
-  <p>I am passionate about embedded systems, circuit design, and signal processing.</p>
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>I am an Electrical & Electronics Engineering student at BAU focused on embedded systems and real-world engineering projects.</p>
+      </div>
+    </section>
 
-  <h3>Projects</h3>
-  <p>Morse Code Interpreter</p>
-  <p>Op-Amp Amplifier Simulation</p>
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Engineering</h3>
+          <ul>
+            <li>Circuit Analysis</li>
+            <li>Analog Electronics</li>
+            <li>Proteus Simulation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Programming</h3>
+          <ul>
+            <li>Arduino</li>
+            <li>C / C++</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Circuit Simulation</li>
+            <li>Signal Analysis</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <h3>Contact</h3>
-  <p>Email: berenkurt@gmail.com</p>
-  <p>LinkedIn: linkedin.com/in/beren-kurt</p>
+    <section>
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Morse Code Interpreter</h3>
+          <p>Decodes Morse signals into readable text.</p>
+          <div class="tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">Signal Processing</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Op-Amp Simulation</h3>
+          <p>Non-inverting amplifier with gain analysis.</p>
+          <div class="tags">
+            <span class="tag">Op-Amp</span>
+            <span class="tag">Proteus</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <div class="contact-links">
+          <a href="mailto:berenkurt@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/beren-kurt" target="_blank">LinkedIn</a>
+          <a href="https://github.com/berenwolf" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Beren Kurt
+    </footer>
+
+  </div>
 </body>
 </html>
